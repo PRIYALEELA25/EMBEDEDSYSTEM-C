@@ -1,0 +1,2 @@
+../Src/gpio toggle.c:10:6:delay	16	static
+../Src/gpio toggle.c:14:5:main	32	static
