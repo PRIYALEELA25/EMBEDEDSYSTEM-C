@@ -1,0 +1,17 @@
+22:55:18 **** Incremental Build of configuration Debug for project BUTTON_TOGGLE_LED ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/gpio toggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/STM 32 f446re drivers/Driver Devolopment/Drivers/Inc" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/STM 32 f446re drivers/Driver Devolopment/Drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/gpio toggle.d" -MT"Src/gpio toggle.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/gpio toggle.o"
+arm-none-eabi-gcc -o "BUTTON_TOGGLE_LED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\hp\STM32CubeIDE\workspace_2.0.0\STM 32 f446re drivers\Driver Devolopment\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BUTTON_TOGGLE_LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BUTTON_TOGGLE_LED.elf
+ 
+arm-none-eabi-size  BUTTON_TOGGLE_LED.elf 
+arm-none-eabi-objdump -h -S BUTTON_TOGGLE_LED.elf  > "BUTTON_TOGGLE_LED.list"
+   text	   data	    bss	    dec	    hex	filename
+   1760	      0	   1568	   3328	    d00	BUTTON_TOGGLE_LED.elf
+Finished building: default.size.stdout
+ 
+Finished building: BUTTON_TOGGLE_LED.list
+ 
+
+22:55:20 Build Finished. 0 errors, 0 warnings. (took 1s.275ms)
+
