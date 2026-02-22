@@ -1,0 +1,39 @@
+22:00:41 **** Build of configuration Debug for project ALTERNATING_LED ****
+make -j12 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Src" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Inc" -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I../Inc -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Inc" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Src" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I../Inc -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Inc" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Src" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I../Inc -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Inc" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Src" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../DRIVERS/Src/STM32_GPIODRIVER.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -c -I../Inc -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Inc" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS/Src" -I"C:/Users/hp/STM32CubeIDE/workspace_2.0.0/ALTERNATIMG_LED/ALTERNATING_LED/DRIVERS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"DRIVERS/Src/STM32_GPIODRIVER.d" -MT"DRIVERS/Src/STM32_GPIODRIVER.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "DRIVERS/Src/STM32_GPIODRIVER.o"
+arm-none-eabi-gcc -o "ALTERNATING_LED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\hp\STM32CubeIDE\workspace_2.0.0\ALTERNATIMG_LED\ALTERNATING_LED\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ALTERNATING_LED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ALTERNATING_LED.elf
+ 
+arm-none-eabi-size  ALTERNATING_LED.elf 
+arm-none-eabi-objdump -h -S ALTERNATING_LED.elf  > "ALTERNATING_LED.list"
+   text	   data	    bss	    dec	    hex	filename
+   1760	      0	   1568	   3328	    d00	ALTERNATING_LED.elf
+Finished building: default.size.stdout
+ 
+Finished building: ALTERNATING_LED.list
+ 
+22:00:53 **** Incremental Build of configuration Debug for project ALTERNATING_LED ****
+make -j12 all 
+arm-none-eabi-size  ALTERNATING_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      0	   1568	   3328	    d00	ALTERNATING_LED.elf
+Finished building: default.size.stdout
+ 
+22:03:08 **** Incremental Build of configuration Debug for project ALTERNATING_LED ****
+make -j12 all 
+arm-none-eabi-size  ALTERNATING_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      0	   1568	   3328	    d00	ALTERNATING_LED.elf
+Finished building: default.size.stdout
+ 
+22:06:50 **** Incremental Build of configuration Debug for project ALTERNATING_LED ****
+make -j12 all 
+arm-none-eabi-size  ALTERNATING_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      0	   1568	   3328	    d00	ALTERNATING_LED.elf
+Finished building: default.size.stdout
+ 
