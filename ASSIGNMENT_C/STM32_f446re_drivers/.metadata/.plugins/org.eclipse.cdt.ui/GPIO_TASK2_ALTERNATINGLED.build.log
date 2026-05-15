@@ -1,0 +1,9 @@
+20:20:32 **** Clean-only build of configuration Default for project GPIO_TASK2_ALTERNATINGLED ****
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ST/STM32CubeIDE_2.0.0/STM32CubeIDE//plugins/com.st.stm32cube.ide.jre.win64_3.4.100.202508201254/jre/bin/server;C:/ST/STM32CubeIDE_2.0.0/STM32CubeIDE//plugins/com.st.stm32cube.ide.jre.win64_3.4.100.202508201254/jre/bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\avrdude-v8.1;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;avrdude-v8.1;C:\avrdude-v8.1;C:\msys64;C:\msys64\mingw64\bin;;C:\ST\STM32CubeIDE_2.0.0\STM32CubeIDE;]
+
+20:20:32 Build Failed. 1 errors, 0 warnings. (took 210ms)
+

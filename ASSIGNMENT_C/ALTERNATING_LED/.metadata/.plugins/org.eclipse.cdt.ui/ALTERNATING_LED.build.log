@@ -1,0 +1,10 @@
+22:06:50 **** Incremental Build of configuration Debug for project ALTERNATING_LED ****
+make -j12 all 
+arm-none-eabi-size  ALTERNATING_LED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1760	      0	   1568	   3328	    d00	ALTERNATING_LED.elf
+Finished building: default.size.stdout
+ 
+
+22:06:50 Build Finished. 0 errors, 0 warnings. (took 437ms)
+

@@ -1,0 +1,16 @@
+/*
+ * gpio toggle.c
+ *
+ *  Created on: 16-Feb-2026
+ *      Author: hp
+ */
+
+#include "stm32f446xx.h"
+#include "stm32_GPIO.h"
+
+
+int main(void){
+
+
+
+}
